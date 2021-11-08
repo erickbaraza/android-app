@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".Screen2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Inches conversion to mm"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inches"
+        android:textSize="20sp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/textView4"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="30dp"
+        android:text="mm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPersonName2"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/textView5"
+        android:text="0.000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_below="@id/textView6"
+        android:layout_toRightOf="@id/button2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="40dp"/>
+
+</RelativeLayout>
